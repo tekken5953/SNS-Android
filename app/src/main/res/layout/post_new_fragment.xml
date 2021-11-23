@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:overScrollMode="ifContentScrolls"
+    android:background="@color/white"
+    android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/post_new_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/gmarket_sans_bold"
+                android:text="작성자 이름"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/post_new_photo_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:text="+ 사진"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gmarket_sans_medium"
+                android:gravity="center_vertical"
+                android:paddingTop="2dp"
+                android:checked="true"
+                android:buttonTint="@color/blue"
+                android:layout_marginTop="5dp"/>
+
+
+            <View
+                android:id="@+id/post_new_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/post_new_name_tv"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/blue" />
+
+            <FrameLayout
+                android:id="@+id/post_new_frame"
+                android:layout_width="380dp"
+                android:layout_height="380dp"
+                android:layout_below="@+id/post_new_line_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@color/dark_blue">
+
+                <ImageView
+                    android:id="@+id/post_new_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@android:mipmap/sym_def_app_icon"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/post_new_add_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="클릭하여 이미지를 추가/수정하세요!"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/gmarket_sans_bold"
+                    android:textSize="16sp"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/post_new_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_new_frame"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gmarket_sans_medium"
+                android:text="날짜"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/post_new_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_new_date_tv"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/gmarket_sans_medium"
+                android:maxEms="20"
+                android:text="포스팅 내용"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/post_new_add_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toEndOf="@+id/post_new_content_tv"
+                android:layout_above="@+id/post_new_line_2"
+                android:src="@drawable/edit"
+                app:tint="@color/blue"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="-3dp"
+                android:background="@drawable/black_round_corner"/>
+
+            <TextView
+                android:id="@+id/post_new_more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/post_new_line_2"
+                android:layout_toEndOf="@+id/post_new_content_tv"
+                android:fontFamily="@font/gmarket_sans_medium"
+                android:text="더보기"
+                android:visibility="gone"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+
+            <View
+                android:id="@+id/post_new_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/post_new_content_tv"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/blue" />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/post_new_upload_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/post_new_line_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/login_signin_btn"
+                android:drawableStart="@drawable/thumbup"
+                android:drawablePadding="-25dp"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/gmarket_sans_bold"
+                android:paddingStart="30dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="5dp"
+                android:text="업로드!"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:backgroundTint="@color/blue" />
+        </RelativeLayout>
+
+</ScrollView>

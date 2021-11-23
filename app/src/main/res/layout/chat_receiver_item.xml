@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="2dp"
+    android:gravity="start">
+
+    <TextView
+        android:id="@+id/chat_receiver_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/chat_receiver"
+        android:fontFamily="@font/gmarket_sans_medium"
+        android:gravity="center"
+        android:maxEms="12"
+        android:text="메시지 내용"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/chat_receiver_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/chat_receiver_text"
+        android:fontFamily="@font/gmarket_sans_medium"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="10dp"
+        android:text="hh:mm"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

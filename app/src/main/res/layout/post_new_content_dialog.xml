@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/post_new_content_dialog_et"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:hint="내용"
+        android:backgroundTint="@color/none"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:maxEms="20"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/post_new_content_dialog_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/post_new_content_dialog_et"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="확 인"
+        android:fontFamily="@font/gmarket_sans_bold"
+        android:textColor="@color/blue"
+        android:background="@drawable/button_round_corner"
+        android:backgroundTint="@color/dark_blue"
+        android:layout_toStartOf="@+id/post_new_content_dialog_cancel"/>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/post_new_content_dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/post_new_content_dialog_et"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentEnd="true"
+        android:text="취 소"
+        android:fontFamily="@font/gmarket_sans_bold"
+        android:textColor="@color/blue"
+        android:background="@drawable/button_round_corner"
+        android:backgroundTint="@color/dark_blue"/>
+
+
+</RelativeLayout>

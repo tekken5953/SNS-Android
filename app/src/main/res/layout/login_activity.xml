@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/layout_round_corner_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:text="@string/signin"
+            android:textColor="@color/blue"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/login_id_iv"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_above="@+id/login_edit_pwd"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_edit_iv"
+            android:padding="5dp"
+            android:src="@drawable/user_id" />
+
+        <EditText
+            android:id="@+id/login_edit_id"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_above="@+id/login_edit_pwd"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/login_id_iv"
+            android:background="@drawable/login_edit_filter"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:hint="@string/name"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <ImageView
+            android:id="@+id/login_pwd_iv"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_above="@+id/login_signin_btn"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/login_edit_iv"
+            android:padding="7dp"
+            android:src="@drawable/password" />
+
+
+        <EditText
+            android:id="@+id/login_edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_above="@+id/login_signin_btn"
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toStartOf="@id/login_show_pwd_iv"
+            android:layout_toEndOf="@+id/login_pwd_iv"
+            android:background="@drawable/login_show_pwd_iv"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <ImageView
+            android:id="@+id/login_show_pwd_iv"
+            android:layout_width="55dp"
+            android:layout_height="65dp"
+            android:layout_above="@+id/login_signin_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/login_edit_filter"
+            android:padding="15dp"
+            android:src="@drawable/noshow_pwd"
+            app:tint="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_signin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_above="@+id/login_signup_btn"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/login_signin_btn"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:gravity="center"
+            android:onClick="press_sign_in"
+            android:paddingTop="3dp"
+            android:text="@string/signin"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_above="@+id/login_missing_pwd_tv"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/login_signup_btn"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:gravity="center"
+            android:onClick="press_sign_up"
+            android:paddingTop="3dp"
+            android:text="@string/signup"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/login_missing_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="160dp"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:onClick="press_missing_data"
+            android:padding="3dp"
+            android:text="비밀번호를 잊으셨나요?"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

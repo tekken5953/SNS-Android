@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Admin.AdminPageActivity">
+
+    <TextView
+        android:id="@+id/admin_cancel_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/gmarket_sans_bold"
+        android:textSize="18sp"
+        android:onClick="admin_press_cancel"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.rey.material.widget.Spinner
+        android:id="@+id/admin_spinner_subject"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/admin_cancel_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:dropDownWidth="125dp"
+        android:theme="@style/Material.Widget.Spinner"
+        />
+
+    <com.rey.material.widget.Spinner
+        android:id="@+id/admin_spinner_do"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@id/admin_spinner_subject"
+        app:layout_constraintStart_toEndOf="@+id/admin_spinner_subject"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_spinner_subject"
+        app:layout_constraintEnd_toStartOf="@+id/admin_spinner_btn"
+        android:gravity="center"
+        android:dropDownWidth="125dp"
+        android:theme="@style/Material.Widget.Spinner"
+        />
+
+    <Button
+        android:id="@+id/admin_spinner_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="조 회"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/gmarket_sans_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/admin_spinner_subject"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_spinner_subject"
+        android:layout_marginEnd="20dp"/>
+
+    <View
+        android:id="@+id/admin_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/admin_spinner_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/admin_view1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/admin_tr"
+        android:scrollbars="vertical"
+        android:overScrollMode="ifContentScrolls">
+
+        <TextView
+            android:id="@+id/admin_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"/>
+
+    </ScrollView>
+
+    <TableRow
+        android:id="@+id/admin_tr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/admin_delete_et"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="User ID"/>
+
+        <Button
+            android:id="@+id/admin_delete_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/gmarket_sans_bold" />
+
+        <Button
+            android:id="@+id/admin_delete_delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:visibility="gone"/>
+    </TableRow>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

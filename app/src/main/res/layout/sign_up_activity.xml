@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Login.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/signup_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="17dp"
+            android:onClick="press_back"
+            android:src="@drawable/cancel_iv"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/signup_main_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:text="@string/signup"
+            android:textColor="@color/blue"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/signup_name_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_main_tx"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:text="@string/name"
+            android:textColor="@color/blue"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/signup_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/signup_name_tx"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/sign_up_et_background"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/signup_phone_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_name_et"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:text="전화번호"
+            android:textColor="@color/blue"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_name_et"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@+id/signup_phone_tx"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:text="('-'는 제외)"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/signup_phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/signup_phone_tx"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/sign_up_et_background"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/signup_password_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_phone_et"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:text="비밀번호"
+            android:textColor="@color/blue"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_phone_et"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@+id/signup_password_tx"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:text="(6자 이상 12자 이하)"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/signup_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/signup_password_tx"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/sign_up_et_background"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/signup_repeat_password_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_password_et"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:text="비밀번호 확인"
+            android:textColor="@color/blue"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/signup_repeat_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/signup_repeat_password_tx"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/sign_up_et_background"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/login_signin_btn"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="-20dp"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:onClick="press_complete_sign_up"
+            android:paddingStart="30dp"
+            android:text="회원가입 하기!"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

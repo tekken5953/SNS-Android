@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/home_post_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gmarket_sans_bold"
+        android:text="작성자 이름"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/home_post_item_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/home_post_item_name_tv"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/blue" />
+
+    <ImageView
+        android:id="@+id/home_post_photo_iv"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_below="@+id/home_post_item_line_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@color/dark_blue" />
+
+    <TextView
+        android:id="@+id/home_post_item_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_post_photo_iv"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gmarket_sans_medium"
+        android:text="날짜"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/home_post_item_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_post_item_date_tv"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/gmarket_sans_medium"
+        android:maxEms="20"
+        android:maxLines="4"
+        android:text="업로드 내용 업로드 내용 업로드 내용 업로드 내용 업로드 내용
+업로드 내용 업로드 내용 업로드 내용 업로드 내용 업로드 내용 업로드 내용 업로드 내용
+업로드 내용 업로드 내용 업로드 내용 업로드 내용 업로드 내용 내용 업로드 내용 업로드 내용 업로드 내용
+업로드 내용 업로드 내용 업로드 내용 업로드 내용 업로드 내용 업로드 내용 업로드 내용"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/home_post_item_more_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/home_post_item_heart_iv"
+        android:layout_toEndOf="@+id/home_post_item_content_tv"
+        android:fontFamily="@font/gmarket_sans_medium"
+        android:text="더보기"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/home_post_item_heart_iv"
+        android:layout_width="28sp"
+        android:layout_height="28sp"
+        android:layout_below="@+id/home_post_item_content_tv"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/heart_empty"
+        app:tint="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/home_post_item_heart_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_post_item_content_tv"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/home_post_item_heart_iv"
+        android:text="+7"
+        android:textColor="@color/black" />
+
+
+    <ImageView
+        android:id="@+id/home_post_item_comment_iv"
+        android:layout_width="27sp"
+        android:layout_height="27sp"
+        android:layout_below="@+id/home_post_item_content_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/home_post_item_comment_count_tv"
+        android:src="@drawable/bottom_nav_chat"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/home_post_item_comment_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_post_item_content_tv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="20dp"
+        android:text="+15"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/home_post_item_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_post_item_comment_iv"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_post_item_comment_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+        <EditText
+            android:id="@+id/home_post_item_comment_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_post_item_comment_rv"
+            android:layout_marginStart="20dp"
+            android:layout_toStartOf="@+id/home_post_item_comment_btn" />
+
+        <ImageButton
+            android:id="@+id/home_post_item_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_post_item_comment_rv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/msg_chat_send"
+            app:tint="@color/blue" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/home_post_item_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/home_post_item_comment_layout"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/blue" />
+
+</RelativeLayout>

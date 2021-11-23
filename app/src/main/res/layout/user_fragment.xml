@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPage.UserFragment"
+    android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/user_cardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/noprofile"/>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/user_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_name_tv"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/user_cardView"
+            android:src="@drawable/change_profile"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_cardView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:text="사용자 이름"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/user_view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/user_name_tv"
+            android:layout_marginTop="30dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/user_change_pwd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/user_view1"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="비밀번호 변경하기"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/user_view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/user_change_pwd_tv"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/user_alarm_tv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/user_view2"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="알람 설정하기"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/user_view3"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/user_alarm_tv"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/user_theme_tv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/user_view3"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="테마설정 하기"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/user_view4"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/user_theme_tv"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/user_ask_tv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/user_view4"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="문의 하기"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/user_view5"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/user_ask_tv"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/user_logout_tv"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/user_view5"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="로그아웃 하기"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/user_view6"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_below="@+id/user_logout_tv"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray" />
+
+</RelativeLayout>

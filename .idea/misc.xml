@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProject/SNS-Android-master/SNS-Android-master/app/src/main/res/layout/admin_page_acitvity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/SNS-Android-master/SNS-Android-master/app/src/main/res/layout/change_pwd_diag.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/SNS-Android-master/SNS-Android-master/app/src/main/res/layout/chat_list_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/SNS-Android-master/SNS-Android-master/app/src/main/res/layout/chat_list_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/SNS-Android-master/SNS-Android-master/app/src/main/res/layout/home_post_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/SNS-Android-master/SNS-Android-master/app/src/main/res/layout/home_post_recycler_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/SNS-Android-master/SNS-Android-master/app/src/main/res/layout/home_story_recycler_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/SNS-Android-master/SNS-Android-master/app/src/main/res/layout/progressdial.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/drawable/arrow_right.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/drawable/bottom_nav_person.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/drawable/chat_send.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/drawable/click.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/drawable/tutorial_crcle.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/drawable/tutorial_layout_box.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/drawable/tutorial_text_box.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/change_pwd_diag.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/chat_list_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/chat_list_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/chat_new_recycler_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/chat_new_start_dialog.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/chat_receiver_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/chat_send_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/chatting_activitiy.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/home_comment_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/home_post_fragment.xml" value="0.3605128205128205" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/home_post_recycler_item.xml" value="0.25" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/login_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/main_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/post_new_content_dialog.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/post_new_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/progressdial.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/sign_up_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/splash_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/story_dialog.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/toast_layout.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/tutorial1_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/tutorial2_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/tutorial_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/tutoriial_black1.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/layout/user_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/sns_app/app/src/main/res/menu/user_bottom_nav.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704441832305",
+    "project_id": "private-sns",
+    "storage_bucket": "private-sns.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704441832305:android:368a4ca69130a3d2d1dcd0",
+        "android_client_info": {
+          "package_name": "app.streamingproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704441832305-6asi5tfldf8vbc3kcumahsit60gi8iqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQGhaumWtna2wWtX-aSkVqQzh0Gv8hcGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704441832305-6asi5tfldf8vbc3kcumahsit60gi8iqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
